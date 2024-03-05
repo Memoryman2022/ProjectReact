@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = () => {
+export default function Navbar() {
   return (
     <div className="navbar">
       <img className="logo" alt="image-logo" />
@@ -11,6 +11,6 @@ const Navbar = () => {
       </ul>
     </div>
   );
-};
+}
 
-export default Navbar;
+// export default Navbar;

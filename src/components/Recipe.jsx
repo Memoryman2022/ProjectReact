@@ -19,7 +19,7 @@ export default function Recipes() {
   };
   return (
     <div className="recipeContainer">
-      <Sidebar />
+      {/* <Sidebar /> */}
       <div className="listContainer">
         <ul>
           {recipeArray.map((food) => (

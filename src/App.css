@@ -1,89 +1,126 @@
 #root {
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+a {
+	text-decoration: none;
+	padding: 0px;
+}
+
+ul {
+	padding: 0px;
+}
+
+li {
+	list-style: none;
+}
+
+p {
+	padding: 0px;
+	margin: 5px;
+	color: black;
 }
 
 .logo {
-  height: 5em;
-  margin: 10px 20px;
-  border-radius: 10px;
+	height: 5em;
+	margin: 10px 20px;
+	border-radius: 10px;
 }
 
 .card {
-  padding: 2em;
+	padding: 2em;
 }
 
 .read-the-docs {
-  color: #888;
+	color: #888;
 }
 
 .navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: lightseagreen;
-  border-radius: 10px;
-  height: 100px;
-  padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: lightseagreen;
+	border-radius: 10px;
+	height: 100px;
+	padding: 10px;
 }
 
 .list {
-  display: flex;
-  justify-content: space-around;
-  width: 80%;
-  color: white;
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	color: white;
 }
 
 .list li {
-  list-style: none;
-  font-size: 25px;
-  text-transform: uppercase;
-  font-weight: 400;
+	list-style: none;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 400;
 }
 .list li:hover {
-  font-style: italic;
-  font-weight: 700;
+	font-style: italic;
+	font-weight: 700;
 }
 
 .recipeContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .listContainer {
-  width: 100%;
-  background-color: lightblue;
-  border-radius: 10px;
+	width: 100%;
+	background-color: lightblue;
+	border-radius: 10px;
 }
 
 .listRecipe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid brown;
-  margin: 10px auto;
-  padding: 10px;
-  border-radius: 10px;
-  width: 50%;
-  background-color: lightcyan;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid brown;
+	margin: 10px auto;
+	padding: 10px;
+	border-radius: 10px;
+	width: 50%;
+	background-color: lightcyan;
 }
 
 .listRecipe img {
-  height: 100px;
-  border-radius: 10px;
+	height: 100px;
+	border-radius: 10px;
 }
 
 .footerContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: lightseagreen;
-  border-radius: 10px;
-  height: 100px;
-  padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: lightseagreen;
+	border-radius: 10px;
+	height: 100px;
+	padding: 10px;
+}
+
+.containerPrincipal {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.sidebar {
+	background-color: lightgray;
+	border-radius: 10px;
+	padding: 5px;
+	width: 15%;
+}
+
+.containerRoutes {
+	width: 85%;
+	background: lightcyan;
+	border-radius: 10px;
 }

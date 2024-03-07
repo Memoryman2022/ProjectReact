@@ -1,8 +1,32 @@
 import { useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import recipeData from "../../recipe.json";
 
-import Sidebar from "../components/Sidebar.jsx";
+export default function Recipes() {
+	let [recipeArray, setRecipeArray] = useState(recipeData);
 
-import recipeData from "/recipe.json";
+	const { recipeId } = useParams();
+	const recipeInfo = recipeData.find((recipe) => recipe.id === recipeId);
+
+	const deleteById = (id) => {
+		setRecipeArray((food) => {
+			return food.filter((recipe) => recipe.id !== id);
+		});
+	};
+
+	return (
+		<div className="recipeAlone">
+			<li key={recipeInfo.id} className="listRecipe">
+				<img src={recipeInfo.image} />
+				<p>Recipe: {recipeInfo.name}</p>
+				<p>Calories: {recipeInfo.calories}</p>
+				<button onClick={() => deleteById(recipeInfo.id)}>Delete</button>
+			</li>
+		</div>
+	);
+}
+
+/*import recipeData from "/recipe.json";
 // import { Linter } from "eslint";
 
 export default function Recipes() {
@@ -19,7 +43,6 @@ export default function Recipes() {
   };
   return (
     <div className="recipeContainer">
-      {/* <Sidebar /> */}
       <div className="listContainer">
         <ul>
           {recipeArray.map((food) => (
@@ -34,4 +57,4 @@ export default function Recipes() {
       </div>
     </div>
   );
-}
+}*/

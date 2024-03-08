@@ -1,10 +1,6 @@
-import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import recipeData from "../../recipe.json";
 
-export default function Recipes() {
-	let [recipeArray, setRecipeArray] = useState(recipeData);
-
+export default function Recipes({ recipes, setRecipes, recipeData }) {
 	const { recipeId } = useParams();
 	const recipeInfo = recipeData.find((recipe) => recipe.id === recipeId);
 

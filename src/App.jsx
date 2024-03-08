@@ -9,20 +9,45 @@ import NewRecipeForm from "./components/NewRecipeForm.jsx";
 import { HomePrincipal } from "./page/HomePrincipal.jsx";
 import { Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar.jsx";
+import recipeData from "/recipe.json";
+import { useState } from "react";
 
 function App() {
+	const [recipes, setRecipes] = useState(recipeData);
 	return (
 		<div className="App">
 			<Navbar />
 			<div className="containerPrincipal">
-				<Sidebar />
+				<Sidebar
+					recipeData={recipeData}
+					recipes={recipes}
+					setRecipes={setRecipes}
+				/>
 				<div className="containerRoutes">
 					<Routes>
 						<Route path={"/"} element={<HomePrincipal />} />
 						<Route path={"/about"} element={<About />} />
 						<Route path={"*"} element={<NotFound />} />
-						<Route path={"/recipes/:recipeId"} element={<Recipes />} />
-						<Route path={"/NewRecipeForm"} element={<NewRecipeForm />} />
+						<Route
+							path={"/recipes/:recipeId"}
+							element={
+								<Recipes
+									recipeData={recipeData}
+									recipes={recipes}
+									setRecipes={setRecipes}
+								/>
+							}
+						/>
+						<Route
+							path={"/NewRecipeForm"}
+							element={
+								<NewRecipeForm
+									recipeData={recipeData}
+									recipes={recipes}
+									setRecipes={setRecipes}
+								/>
+							}
+						/>
 					</Routes>
 				</div>
 			</div>

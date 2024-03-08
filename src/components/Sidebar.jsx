@@ -1,11 +1,6 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import Recipes from "./Recipe.jsx";
-import recipeData from "/recipe.json";
 
-export default function Sidebar() {
-	const [recipes, setRecipes] = useState(recipeData);
-
+export default function Sidebar({ recipes, setRecipes }) {
 	return (
 		<div className="sidebar">
 			<h2>Recipes</h2>

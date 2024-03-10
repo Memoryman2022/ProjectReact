@@ -11,6 +11,7 @@ const NewRecipeForm = ({ addRecipe, recipes, setRecipes, recipeData }) => {
 
   const handleSubmitNewRecipe = (e) => {
     e.preventDefault();
+
     const newRecipe = {
       name,
       calories,
@@ -18,13 +19,8 @@ const NewRecipeForm = ({ addRecipe, recipes, setRecipes, recipeData }) => {
       servings,
       id: recipes.length + 1,
     };
-    addRecipe(newRecipe);
-    nav("/");
-
-    setName("");
-    setCalories("");
-    setImage("");
-    setServings("");
+    recipeData.push(newRecipe);
+    console.log(newRecipe);
   };
 
   return (

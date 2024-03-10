@@ -25,7 +25,16 @@ function App() {
 				/>
 				<div className="containerRoutes">
 					<Routes>
-						<Route path={"/"} element={<HomePrincipal />} />
+						<Route
+							path={"/"}
+							element={
+								<HomePrincipal
+									recipeData={recipeData}
+									recipes={recipes}
+									setRecipes={setRecipes}
+								/>
+							}
+						/>
 						<Route path={"/about"} element={<About />} />
 						<Route path={"*"} element={<NotFound />} />
 						<Route

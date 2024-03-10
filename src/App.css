@@ -167,3 +167,10 @@ p {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+/* ABOUT PAGE*/
+
+.about-script {
+  margin: 40px;
+  padding: 10px;
+  color: rgb(234, 166, 158);
+}

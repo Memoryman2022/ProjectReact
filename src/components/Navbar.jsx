@@ -5,8 +5,8 @@ export default function Navbar() {
     <div className="navbar">
       <img className="logo" src={Logo} alt="image-logo" />
       <ul className="list">
-        <Link to="/">home</Link>
-        <Link to="/About">About</Link>
+        <Link to="/">HOME</Link>
+        <Link to="/About">ABOUT</Link>
       </ul>
     </div>
   );

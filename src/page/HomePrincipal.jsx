@@ -87,11 +87,11 @@ export const HomePrincipal = ({ recipeData, recipes, setRecipes }) => {
 				have a wide variety of content, so you can find out how to make a lot of
 				menus so you won't get bored. you can also save your own unique recipe
 			</p>
-			<Link to="/">
-				<button>Create Recipe</button>
+			<Link to="/Onlinerecipes">
+				<button className="buttonHome">Online Recipes</button>
 			</Link>
 			<Link to="/">
-				<button>All Recipe</button>
+				<button className="buttonHome">All Recipe</button>
 			</Link>
 		</>
 	);

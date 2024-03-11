@@ -20,7 +20,7 @@ function App() {
   }
   return (
     <div className="App">
-      <Navbar />
+      <Navbar recipes={recipes} />
       <div className="containerPrincipal">
         <Sidebar
           recipeData={recipeData}

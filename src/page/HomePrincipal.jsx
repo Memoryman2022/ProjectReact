@@ -42,7 +42,7 @@ export const HomePrincipal = ({ recipeData, recipes, setRecipes }) => {
 
   return (
     <>
-      <h1>La Buena Comida</h1>
+      <img className="main-image" src="../../images/main.png" />
       <div className="main-container">
         <div className="slider-container">
           <div className="leftArrow" onClick={() => scrollToImage("prev")}>

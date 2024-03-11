@@ -1,7 +1,6 @@
 #root {
   width: 100%;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -39,6 +38,7 @@ p {
 }
 
 .logo {
+  width: 100px;
   height: 5em;
   margin: 10px 20px;
   border-radius: 10px;
@@ -60,21 +60,24 @@ p {
   justify-content: space-around;
   align-items: center;
   background-color: rgb(246, 237, 207);
-  border-radius: 10px;
+
   height: 100px;
   padding: 10px;
 }
+.logo {
+  width: 160px;
+}
 .random-btn {
   color: #2a4255;
-  background-color: rgb(246, 237, 207);
+  background-color: rgb(231, 213, 177);
 }
 .home-btn {
   color: #2a4255;
-  background-color: rgb(246, 237, 207);
+  background-color: rgb(231, 213, 177);
 }
 .about-btn {
   color: #2a4255;
-  background-color: rgb(246, 237, 207);
+  background-color: rgb(231, 213, 177);
 }
 
 .list {
@@ -131,7 +134,7 @@ p {
   justify-content: space-around;
   align-items: center;
   background-color: rgb(246, 237, 207);
-  border-radius: 10px;
+
   height: 100px;
   padding: 10px;
 }
@@ -142,19 +145,27 @@ p {
   width: 100%;
 }
 
+/* SIDEBAR*/
+
 .sidebar {
+  color: #2a4255;
   background-color: lightgray;
-  border-radius: 10px;
   padding: 10px;
   width: 100x;
 }
 
 .containerRoutes {
   width: 85%;
-  background: rgb(225, 218, 204);
-  border-radius: 10px;
+  background: rgb(231, 213, 177);
+
   color: #2a4255;
 }
+
+.main-image {
+  width: 500px;
+  height: 260px;
+}
+
 .submit-recipe-btn {
   display: inline-block;
   background-color: #2a4255;
@@ -175,14 +186,13 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 100px;
 }
 .submit-new-recipe-form label {
   padding: 10px;
   margin: 10px 0;
   width: 80%;
   border: 5px solid #457089;
-  box-shadow: 0 0 8px 8px rgba(64, 97, 128, 0.5);
+  box-shadow: 0 0 4px 4px rgba(64, 97, 128, 0.5);
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -195,6 +205,34 @@ p {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+.text-form {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+.new-recipe-div {
+  width: 100%;
+  padding-top: 40px;
+  padding-left: 50px;
+}
+
+.submit-recipe-btn-form {
+  display: inline-block;
+  background-color: #2a4255;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
 /* ABOUT PAGE*/
 
 .about-script {
@@ -202,6 +240,8 @@ p {
   padding: 10px;
   color: #2a4255;
 }
+
+/*MAIN PAGE*/
 
 .main-container {
   width: 500px;
@@ -233,7 +273,7 @@ p {
   left: 20px;
   font-size: 80px;
   font-weight: 900;
-  color: black;
+  color: #2a4255;
   z-index: 1;
   cursor: pointer;
 }
@@ -245,7 +285,7 @@ p {
   right: 20px;
   font-size: 80px;
   font-weight: 900;
-  color: black;
+  color: #2a4255;
   z-index: 1;
   cursor: pointer;
 }
@@ -275,12 +315,17 @@ div.active {
   border-radius: 50%;
 }
 div.inactive {
-  background: lightseagreen;
+  background: #2a4255;
   width: 15px;
   height: 15px;
   border-radius: 50%;
 }
 
+/*FOOTER*/
+.footerContainer {
+  display: flex;
+  color: #2a4255;
+}
 .logo-footer {
   width: 40px;
   height: 40px;
@@ -302,4 +347,9 @@ div.inactive {
 
 .footerInf h4 {
   margin: 0;
+}
+
+.contact-btn {
+  background-color: rgb(231, 213, 177);
+  color: #2a4255;
 }

@@ -31,11 +31,9 @@ const NewRecipeForm = ({ addRecipe, recipes, setRecipes, recipeData }) => {
   };
 
   return (
-    <div>
-      <h2>SUBMIT NEW RECIPE</h2>
-      <Link to="/">
-        <h2>BACK</h2>
-      </Link>
+    <div className="new-recipe-div">
+      <h2 className="text-form">Add your own recipe</h2>
+
       <form onSubmit={handleSubmitNewRecipe} className="submit-new-recipe-form">
         <label>
           NAME OF DISH:
@@ -85,7 +83,12 @@ const NewRecipeForm = ({ addRecipe, recipes, setRecipes, recipeData }) => {
             }}
           />
         </label>
-        <button type="submit">SUBMIT RECIPE</button>
+        <button className="submit-recipe-btn-form" type="submit">
+          SUBMIT RECIPE
+        </button>
+        <Link to="/">
+          <button className="submit-recipe-btn-form">Return</button>
+        </Link>
       </form>
     </div>
   );

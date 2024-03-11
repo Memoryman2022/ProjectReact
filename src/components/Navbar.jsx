@@ -1,4 +1,6 @@
 import Logo from "../assets/Logo.png";
+import test from "../../images/main.png";
+import test2 from "../../images/1.webp";
 
 import { Link, useNavigate } from "react-router-dom";
 export default function Navbar({ recipes }) {
@@ -15,7 +17,7 @@ export default function Navbar({ recipes }) {
 
   return (
     <div className="navbar">
-      <img className="logo" src={Logo} alt="image-logo" />
+      <img className="logo" src={test} alt="image-logo" />
       <ul className="list">
         <button className="home-btn">
           <Link to="/">HOME</Link>

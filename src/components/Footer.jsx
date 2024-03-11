@@ -41,14 +41,14 @@ export default function Footer() {
         <h4>Developed by</h4>
 
         <p>
-          Rob <span>https://github.com/Memoryman2022</span>
+          Robert Cannon <span>https://github.com/Memoryman2022</span>
         </p>
 
         <p>
           Luis Felipe <span>https://github.com/unidrelyn</span>
         </p>
       </div>
-      <div>contact</div>
+      <button className="contact-btn">contact</button>
     </div>
   );
 }

@@ -20,13 +20,14 @@ const NewRecipeForm = ({ addRecipe, recipes, setRecipes, recipeData }) => {
       id: recipes.length + 1,
     };
 
-    setRecipes(newRecipe, ...recipeData);
+    setRecipes([newRecipe, ...recipeData]);
     setName("");
     setCalories("");
     setImage("");
     setServings("");
 
     nav("/");
+    console.log(recipes);
   };
 
   return (

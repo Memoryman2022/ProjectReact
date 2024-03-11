@@ -19,8 +19,9 @@ export default function Footer() {
 			<div className="footerInf">
 				<h4>Developed by</h4>
 
+
 				<p>
-					Rob <span>https://github.com/Memoryman2022</span>
+				Robert Cannon <span>https://github.com/Memoryman2022</span>
 				</p>
 
 				<p>
@@ -32,4 +33,5 @@ export default function Footer() {
 			</Link>
 		</div>
 	);
+
 }

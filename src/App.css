@@ -1,13 +1,26 @@
 #root {
+
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
 }
 
+@font-face {
+  font-family: "Gill Sans";
+  src: url("src/fonts/GillSans.ttc") format("ttc"),
+    url("src/fonts/GillSans.ttc") format("ttc");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 a {
+
 	text-decoration: none;
 	padding: 0px;
+
 }
 
 ul {
@@ -31,6 +44,8 @@ p {
 	height: 5em;
 	margin: 10px 20px;
 	border-radius: 10px;
+
+
 }
 
 .card {
@@ -41,6 +56,8 @@ p {
 	color: #888;
 }
 
+/*NAVBAR*/
+
 .navbar {
 	display: flex;
 	flex-direction: row;
@@ -50,6 +67,22 @@ p {
 	border-radius: 10px;
 	height: 100px;
 	padding: 10px;
+
+}
+.logo {
+  width: 160px;
+}
+.random-btn {
+  color: #2a4255;
+  background-color: rgb(231, 213, 177);
+}
+.home-btn {
+  color: #2a4255;
+  background-color: rgb(231, 213, 177);
+}
+.about-btn {
+  color: #2a4255;
+  background-color: rgb(231, 213, 177);
 }
 
 .list {
@@ -101,6 +134,7 @@ p {
 }
 
 .footerContainer {
+
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -109,6 +143,7 @@ p {
 	border-radius: 10px;
 	height: 100px;
 	padding: 10px;
+
 }
 
 .containerPrincipal {
@@ -116,6 +151,8 @@ p {
 	flex-direction: row;
 	width: 100%;
 }
+
+/* SIDEBAR*/
 
 .sidebar {
 	background-color: lightgray;
@@ -129,7 +166,14 @@ p {
 	background: rgb(246, 237, 207);
 	border-radius: 10px;
 	color: #2a4255;
+
 }
+
+.main-image {
+  width: 500px;
+  height: 260px;
+}
+
 .submit-recipe-btn {
 	display: inline-block;
 	background-color: #2a4255;
@@ -147,6 +191,7 @@ p {
 /*NEW RECIPE FORM*/
 
 .submit-new-recipe-form {
+
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -162,6 +207,7 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
 }
 .submit-new-recipe-form input {
 	padding: 10px;
@@ -170,13 +216,45 @@ p {
 	border: 1px solid #ccc;
 	border-radius: 4px;
 }
+
+.text-form {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+.new-recipe-div {
+  width: 100%;
+  padding-top: 40px;
+  padding-left: 50px;
+}
+
+.submit-recipe-btn-form {
+  display: inline-block;
+  background-color: #2a4255;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
 /* ABOUT PAGE*/
 
 .about-script {
+
 	margin: 40px;
 	padding: 10px;
 	color: rgb(216, 199, 111);
+
 }
+
+/*MAIN PAGE*/
 
 .main-container {
 	width: 500px;
@@ -202,6 +280,7 @@ p {
 }
 
 .leftArrow {
+
 	position: absolute;
 	top: 50%;
 	transform: translate(0, -50%);
@@ -223,6 +302,7 @@ p {
 	color: black;
 	z-index: 1;
 	cursor: pointer;
+
 }
 
 .container-images {
@@ -258,8 +338,14 @@ div.inactive {
 	width: 15px;
 	height: 15px;
 	border-radius: 50%;
+
 }
 
+/*FOOTER*/
+.footerContainer {
+  display: flex;
+  color: #2a4255;
+}
 .logo-footer {
 	width: 40px;
 	height: 40px;
@@ -321,4 +407,9 @@ div.inactive {
 .contact {
 	font-size: 30px;
 	color: black;
+}
+
+.contact-btn {
+  background-color: rgb(231, 213, 177);
+  color: #2a4255;
 }

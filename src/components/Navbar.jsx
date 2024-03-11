@@ -1,4 +1,5 @@
 import Logo from "../assets/Logo.png";
+
 import { Link, useNavigate } from "react-router-dom";
 export default function Navbar({ recipeArray }) {
   const navigate = useNavigate();
@@ -20,4 +21,5 @@ export default function Navbar({ recipeArray }) {
       </ul>
     </div>
   );
+
 }

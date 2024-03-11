@@ -1,102 +1,107 @@
 #root {
-	width: 100%;
-	margin: 0 auto;
-	padding: 2rem;
-	text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
 a {
-	text-decoration: none;
-	padding: 0px;
+  text-decoration: none;
+  padding: 0px;
 }
 
 ul {
-	padding: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 li {
-	list-style: none;
+  list-style: none;
 }
 
 p {
-	padding: 0px;
-	margin: 5px;
-	color: black;
+  padding: 0px;
+  margin: 5px;
+  color: black;
 }
 
 .logo {
-	height: 5em;
-	margin: 10px 20px;
-	border-radius: 10px;
+  height: 5em;
+  margin: 10px 20px;
+  border-radius: 10px;
 }
 
 .card {
-	padding: 2em;
+  padding: 2em;
 }
 
 .read-the-docs {
-	color: #888;
+  color: #888;
 }
 
 .navbar {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	background-color: lightseagreen;
-	border-radius: 10px;
-	height: 100px;
-	padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(234, 202, 100);
+  border-radius: 10px;
+  height: 100px;
+  padding: 10px;
 }
 
 .list {
-	display: flex;
-	justify-content: space-around;
-	width: 80%;
-	color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  color: white;
 }
 
 .list li {
-	list-style: none;
-	font-size: 25px;
-	text-transform: uppercase;
-	font-weight: 400;
+  list-style: none;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 .list li:hover {
-	font-style: italic;
-	font-weight: 700;
+  font-style: italic;
+  font-weight: 700;
 }
 
 .recipeContainer {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .listContainer {
-	width: 100%;
-	background-color: lightblue;
-	border-radius: 10px;
+  width: 100%;
+  background-color: lightblue;
+  border-radius: 10px;
 }
 
 .listRecipe {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	border: 1px solid brown;
-	margin: 10px auto;
-	padding: 10px;
-	border-radius: 10px;
-	width: 50%;
-	background-color: lightcyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid brown;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  width: 50%;
+  background-color: lightcyan;
 }
 
 .listRecipe img {
-	height: 100px;
-	border-radius: 10px;
+  height: 100px;
+  border-radius: 10px;
 }
 
 .footerContainer {
+
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -108,22 +113,69 @@ p {
 }
 
 .containerPrincipal {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .sidebar {
-	background-color: lightgray;
-	border-radius: 10px;
-	padding: 5px;
-	width: 15%;
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100x;
 }
 
 .containerRoutes {
-	width: 85%;
-	background: lightcyan;
-	border-radius: 10px;
+  width: 85%;
+  background: rgb(57, 60, 68);
+  border-radius: 10px;
+}
+.submit-recipe-btn {
+  display: inline-block;
+  background-color: #2a4255;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+/*NEW RECIPE FORM*/
+
+.submit-new-recipe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 100px;
+}
+.submit-new-recipe-form label {
+  padding: 10px;
+  margin: 10px 0;
+  width: 80%;
+  border: 5px solid #457089;
+  box-shadow: 0 0 8px 8px rgba(64, 97, 128, 0.5);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.submit-new-recipe-form input {
+  padding: 10px;
+  margin: 20px 0;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+/* ABOUT PAGE*/
+
+.about-script {
+  margin: 40px;
+  padding: 10px;
+  color: rgb(216, 199, 111);
 }
 
 .main-container {

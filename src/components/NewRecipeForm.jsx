@@ -3,89 +3,91 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const NewRecipeForm = ({ addRecipe, recipes, setRecipes, recipeData }) => {
-	const [name, setName] = useState("");
-	const [calories, setCalories] = useState("");
-	const [image, setImage] = useState("");
-	const [servings, setServings] = useState("");
-	const nav = useNavigate();
+  const [name, setName] = useState("");
+  const [calories, setCalories] = useState("");
+  const [image, setImage] = useState("");
+  const [servings, setServings] = useState("");
+  const nav = useNavigate();
 
-	const handleSubmitNewRecipe = (e) => {
-		e.preventDefault();
-		const newRecipe = {
-			name,
-			calories,
-			image,
-			servings,
-			id: recipes.length + 1,
-		};
-		addRecipe(newRecipe);
-		nav("/");
+  const handleSubmitNewRecipe = (e) => {
+    e.preventDefault();
 
-		setName("");
-		setCalories("");
-		setImage("");
-		setServings("");
-	};
+    const newRecipe = {
+      name,
+      calories,
+      image,
+      servings,
+      id: recipes.length + 1,
+    };
 
-	return (
-		<div>
-			<h2>Submit New Recipe</h2>
-			<Link to="/">
-				<h2>back</h2>
-			</Link>
-			<form onSubmit={handleSubmitNewRecipe}>
-				<label>
-					Name of Dish:
-					<input
-						type="text"
-						name="name"
-						placeholder="recipe name"
-						value={name}
-						onChange={(event) => {
-							setName(event.target.value);
-						}}
-					/>
-				</label>
-				<label>
-					No. of Calories:
-					<input
-						type="number"
-						name="calories"
-						placeholder="calories"
-						value={calories}
-						onChange={(event) => {
-							setCalories(event.target.value);
-						}}
-					/>
-				</label>
-				<label>
-					Image:
-					<input
-						type="url"
-						name="image"
-						placeholder="Image url"
-						value={image}
-						onChange={(event) => {
-							setImage(event.target.value);
-						}}
-					/>
-				</label>
-				<label>
-					No. of Servings:
-					<input
-						type="number"
-						name="servings"
-						placeholder="searvings"
-						value={servings}
-						onChange={(event) => {
-							setServings(event.target.value);
-						}}
-					/>
-				</label>
-				<button type="submit">Add Recipe</button>
-			</form>
-		</div>
-	);
+    setRecipes(newRecipe, ...recipeData);
+    setName("");
+    setCalories("");
+    setImage("");
+    setServings("");
+
+    nav("/");
+  };
+
+  return (
+    <div>
+      <h2>SUBMIT NEW RECIPE</h2>
+      <Link to="/">
+        <h2>BACK</h2>
+      </Link>
+      <form onSubmit={handleSubmitNewRecipe} className="submit-new-recipe-form">
+        <label>
+          NAME OF DISH:
+          <input
+            type="text"
+            name="name"
+            placeholder="RECIPE NAME"
+            value={name}
+            onChange={(event) => {
+              setName(event.target.value);
+            }}
+          />
+        </label>
+        <label>
+          NO. OF CALORIES:
+          <input
+            type="number"
+            name="calories"
+            placeholder="CALORIES"
+            value={calories}
+            onChange={(event) => {
+              setCalories(event.target.value);
+            }}
+          />
+        </label>
+        <label>
+          ADD IMAGE:
+          <input
+            type="url"
+            name="image"
+            placeholder="IMAGE URL"
+            value={image}
+            onChange={(event) => {
+              setImage(event.target.value);
+            }}
+          />
+        </label>
+        <label>
+          NO. OF SERVINGS:
+          <input
+            type="number"
+            name="servings"
+            placeholder="SERVINGS"
+            value={servings}
+            onChange={(event) => {
+              setServings(event.target.value);
+            }}
+          />
+        </label>
+        <button type="submit">SUBMIT RECIPE</button>
+      </form>
+    </div>
+  );
 };
 
 export default NewRecipeForm;

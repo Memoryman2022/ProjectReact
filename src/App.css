@@ -46,7 +46,7 @@ p {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(234, 202, 100);
+  background-color: rgb(246, 237, 207);
   border-radius: 10px;
   height: 100px;
   padding: 10px;
@@ -126,8 +126,9 @@ p {
 
 .containerRoutes {
   width: 85%;
-  background: rgb(153, 130, 83);
+  background: rgb(225, 218, 204);
   border-radius: 10px;
+  color: #2a4255;
 }
 .submit-recipe-btn {
   display: inline-block;

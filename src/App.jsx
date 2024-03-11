@@ -13,56 +13,60 @@ import recipeData from "/recipe.json";
 import { useState } from "react";
 
 function App() {
-	const [recipes, setRecipes] = useState(recipeData);
-	return (
-		<div className="App">
-			<Navbar />
-			<div className="containerPrincipal">
-				<Sidebar
-					recipeData={recipeData}
-					recipes={recipes}
-					setRecipes={setRecipes}
-				/>
-				<div className="containerRoutes">
-					<Routes>
-						<Route
-							path={"/"}
-							element={
-								<HomePrincipal
-									recipeData={recipeData}
-									recipes={recipes}
-									setRecipes={setRecipes}
-								/>
-							}
-						/>
-						<Route path={"/about"} element={<About />} />
-						<Route path={"*"} element={<NotFound />} />
-						<Route
-							path={"/recipes/:recipeId"}
-							element={
-								<Recipes
-									recipeData={recipeData}
-									recipes={recipes}
-									setRecipes={setRecipes}
-								/>
-							}
-						/>
-						<Route
-							path={"/NewRecipeForm"}
-							element={
-								<NewRecipeForm
-									recipeData={recipeData}
-									recipes={recipes}
-									setRecipes={setRecipes}
-								/>
-							}
-						/>
-					</Routes>
-				</div>
-			</div>
-			<Footer />
-		</div>
-	);
+  const [recipes, setRecipes] = useState(recipeData);
+  console.log(recipes);
+  if (!recipes) {
+    return <p>Loading...</p>;
+  }
+  return (
+    <div className="App">
+      <Navbar />
+      <div className="containerPrincipal">
+        <Sidebar
+          recipeData={recipeData}
+          recipes={recipes}
+          setRecipes={setRecipes}
+        />
+        <div className="containerRoutes">
+          <Routes>
+            <Route
+              path={"/"}
+              element={
+                <HomePrincipal
+                  recipeData={recipeData}
+                  recipes={recipes}
+                  setRecipes={setRecipes}
+                />
+              }
+            />
+            <Route path={"/about"} element={<About />} />
+            <Route path={"*"} element={<NotFound />} />
+            <Route
+              path={"/recipes/:recipeId"}
+              element={
+                <Recipes
+                  recipeData={recipeData}
+                  recipes={recipes}
+                  setRecipes={setRecipes}
+                />
+              }
+            />
+            <Route
+              path={"/NewRecipeForm"}
+              element={
+                <NewRecipeForm
+                  recipeData={recipeData}
+                  recipes={recipes}
+                  setRecipes={setRecipes}
+                />
+              }
+            />
+          </Routes>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

@@ -40,59 +40,60 @@ export const HomePrincipal = ({ recipeData, recipes, setRecipes }) => {
 		currentIndex >= 17 ? setCurrentIndex(0) : scrollToImage("next");
 	}, 1000);*/
 
-  return (
-    <>
-      <img className="main-image" src="../../images/main.png" />
-      <div className="main-container">
-        <div className="slider-container">
-          <div className="leftArrow" onClick={() => scrollToImage("prev")}>
-            &#10092;
-          </div>
-          <div className="rightArrow" onClick={() => scrollToImage("next")}>
-            &#10093;
-          </div>
-          <div className="container-images">
-            <ul ref={listRef}>
-              {recipes &&
-                recipes.map((item) => {
-                  return (
-                    <li key={item.id}>
-                      <img
-                        src={item.image}
-                        width={500}
-                        height={280}
-                        alt={item.name}
-                      />
-                      <h3>{item.name}</h3>
-                    </li>
-                  );
-                })}
-            </ul>
-          </div>
-          <div className="dots-container">
-            {recipes.map((_, idx) => (
-              <div
-                key={idx}
-                className={`dot-container-item ${
-                  idx === currentIndex ? "active" : "inactive"
-                }`}
-                onClick={() => goToSlide(idx)}
-              ></div>
-            ))}
-          </div>
-        </div>
-      </div>
-      <p className="textHome">
-        In "La buena Cocina" you will find recipes to delight your palate. We
-        have a wide variety of content, so you can find out how to make a lot of
-        menus so you won't get bored. you can also save your own unique recipe
-      </p>
-      <Link to="/">
-        <button>Create Recipe</button>
-      </Link>
-      <Link to="/">
-        <button>All Recipe</button>
-      </Link>
-    </>
-  );
-};
+
+	return (
+		<>
+			<h1>LA BUENA COMIDA</h1>
+			<div className="main-container">
+				<div className="slider-container">
+					<div className="leftArrow" onClick={() => scrollToImage("prev")}>
+						&#10092;
+					</div>
+					<div className="rightArrow" onClick={() => scrollToImage("next")}>
+						&#10093;
+					</div>
+					<div className="container-images">
+						<ul ref={listRef}>
+							{recipes &&
+								recipes.map((item) => {
+									return (
+										<li key={item.id}>
+											<img
+												src={item.image}
+												width={500}
+												height={280}
+												alt={item.name}
+											/>
+											<h3>{item.name}</h3>
+										</li>
+									);
+								})}
+						</ul>
+					</div>
+					<div className="dots-container">
+						{recipes.map((_, idx) => (
+							<div
+								key={idx}
+								className={`dot-container-item ${
+									idx === currentIndex ? "active" : "inactive"
+								}`}
+								onClick={() => goToSlide(idx)}
+							></div>
+						))}
+					</div>
+				</div>
+			</div>
+			<p className="textHome">
+				In "La buena Cocina" you will find recipes to delight your palate. We
+				have a wide variety of content, so you can find out how to make a lot of
+				menus so you won't get bored. you can also save your own unique recipe
+			</p>
+			<Link to="/Onlinerecipes">
+				<button className="buttonHome">Online Recipes</button>
+			</Link>
+			<Link to="/">
+				<button className="buttonHome">All Recipe</button>
+			</Link>
+		</>
+	);
+

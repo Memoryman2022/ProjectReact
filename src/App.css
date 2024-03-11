@@ -1,7 +1,9 @@
 #root {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
+
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
 }
 
 @font-face {
@@ -15,54 +17,57 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 a {
-  text-decoration: none;
-  color: #2a4255;
-  padding: 0px;
+
+	text-decoration: none;
+	padding: 0px;
+
 }
 
 ul {
-  padding: 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
 li {
-  list-style: none;
+	list-style: none;
 }
 
 p {
-  padding: 0px;
-  margin: 5px;
-  color: black;
+	padding: 0px;
+	margin: 5px;
+	color: black;
 }
 
 .logo {
-  width: 100px;
-  height: 5em;
-  margin: 10px 20px;
-  border-radius: 10px;
+	height: 5em;
+	margin: 10px 20px;
+	border-radius: 10px;
+
+
 }
 
 .card {
-  padding: 2em;
+	padding: 2em;
 }
 
 .read-the-docs {
-  color: #888;
+	color: #888;
 }
 
 /*NAVBAR*/
 
 .navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgb(246, 237, 207);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(225, 218, 204);
+	border-radius: 10px;
+	height: 100px;
+	padding: 10px;
 
-  height: 100px;
-  padding: 10px;
 }
 .logo {
   width: 160px;
@@ -81,84 +86,87 @@ p {
 }
 
 .list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 80%;
-  color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 80%;
+	color: white;
 }
 
 .list li {
-  list-style: none;
-  font-size: 25px;
-  text-transform: uppercase;
-  font-weight: 400;
+	list-style: none;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 400;
 }
 .list li:hover {
-  font-style: italic;
-  font-weight: 700;
+	font-style: italic;
+	font-weight: 700;
 }
 
 .recipeContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .listContainer {
-  width: 100%;
-  background-color: lightblue;
-  border-radius: 10px;
+	width: 100%;
+	background-color: lightblue;
+	border-radius: 10px;
 }
 
 .listRecipe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid brown;
-  margin: 10px auto;
-  padding: 10px;
-  border-radius: 10px;
-  width: 50%;
-  background-color: lightcyan;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid brown;
+	margin: 10px auto;
+	padding: 10px;
+	border-radius: 10px;
+	width: 50%;
+	background-color: lightcyan;
 }
 
 .listRecipe img {
-  height: 100px;
-  border-radius: 10px;
+	height: 100px;
+	border-radius: 10px;
 }
 
 .footerContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgb(246, 237, 207);
 
-  height: 100px;
-  padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(225, 218, 204);
+	border-radius: 10px;
+	height: 100px;
+	padding: 10px;
+
 }
 
 .containerPrincipal {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
 }
 
 /* SIDEBAR*/
 
 .sidebar {
-  color: #2a4255;
-  background-color: lightgray;
-  padding: 10px;
-  width: 100x;
+	background-color: lightgray;
+	border-radius: 10px;
+	padding: 10px;
+	width: 15%;
 }
 
 .containerRoutes {
-  width: 85%;
-  background: rgb(231, 213, 177);
+	width: 85%;
+	background: rgb(246, 237, 207);
+	border-radius: 10px;
+	color: #2a4255;
 
-  color: #2a4255;
 }
 
 .main-image {
@@ -167,43 +175,46 @@ p {
 }
 
 .submit-recipe-btn {
-  display: inline-block;
-  background-color: #2a4255;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
+	display: inline-block;
+	background-color: #2a4255;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
 }
 
 /*NEW RECIPE FORM*/
 
 .submit-new-recipe-form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 100px;
 }
 .submit-new-recipe-form label {
-  padding: 10px;
-  margin: 10px 0;
-  width: 80%;
-  border: 5px solid #457089;
-  box-shadow: 0 0 4px 4px rgba(64, 97, 128, 0.5);
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	padding: 10px;
+	margin: 10px 0;
+	width: 80%;
+	border: 5px solid #457089;
+	box-shadow: 0 0 8px 8px rgba(64, 97, 128, 0.5);
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
 }
 .submit-new-recipe-form input {
-  padding: 10px;
-  margin: 20px 0;
-  width: 50%;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+	padding: 10px;
+	margin: 20px 0;
+	width: 50%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
 }
 
 .text-form {
@@ -236,89 +247,98 @@ p {
 /* ABOUT PAGE*/
 
 .about-script {
-  margin: 40px;
-  padding: 10px;
-  color: #2a4255;
+
+	margin: 40px;
+	padding: 10px;
+	color: rgb(216, 199, 111);
+
 }
 
 /*MAIN PAGE*/
 
 .main-container {
-  width: 500px;
-  height: 300px;
-  margin: 0 auto;
+	width: 500px;
+	height: 300px;
+	margin: 0 auto;
 }
 
 .slider-container {
-  position: relative;
-  height: 100%;
+	position: relative;
+	height: 100%;
 }
 
 .dots-container {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .dot-container-item {
-  margin: 8px 3px;
-  cursor: pointer;
-  font-size: 20px;
-  text-align: center;
+	margin: 8px 3px;
+	cursor: pointer;
+	font-size: 20px;
+	text-align: center;
 }
 
 .leftArrow {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  left: 20px;
-  font-size: 80px;
-  font-weight: 900;
-  color: #2a4255;
-  z-index: 1;
-  cursor: pointer;
+
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	left: 20px;
+	font-size: 80px;
+	font-weight: 900;
+	color: black;
+	z-index: 1;
+	cursor: pointer;
 }
 
 .rightArrow {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  right: 20px;
-  font-size: 80px;
-  font-weight: 900;
-  color: #2a4255;
-  z-index: 1;
-  cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	right: 20px;
+	font-size: 80px;
+	font-weight: 900;
+	color: black;
+	z-index: 1;
+	cursor: pointer;
+
 }
 
 .container-images {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  border: 1px solid #eee;
-  overflow: hidden;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	border: 1px solid #eee;
+	overflow: hidden;
+}
+.container-images ul {
+	align-items: center;
 }
 
 .container-images img {
-  width: 100%;
-  height: 230px;
+	width: 100%;
+	height: 230px;
+	border-radius: 5px;
 }
 
 .textHome {
-  width: 60%;
-  margin: 50px auto;
+	width: 60%;
+	margin: 50px auto;
 }
 
 div.active {
-  background: black;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
+	background: black;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
 }
 div.inactive {
-  background: #2a4255;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
+	background: lightseagreen;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+
 }
 
 /*FOOTER*/
@@ -327,26 +347,66 @@ div.inactive {
   color: #2a4255;
 }
 .logo-footer {
-  width: 40px;
-  height: 40px;
-  margin: 15px;
+	width: 40px;
+	height: 40px;
+	margin: 15px;
 }
 
 .footerInf {
-  padding: 0 10px;
+	padding: 0 10px;
 }
 
 .footerInf p {
-  margin: 0;
-  font-weight: 700;
+	margin: 0;
+	font-weight: 700;
 }
 
 .footerInf p span {
-  font-weight: 400;
+	font-weight: 400;
 }
 
 .footerInf h4 {
-  margin: 0;
+	margin: 0;
+}
+
+.formContact {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 400px;
+	margin: 20px;
+}
+
+.formContact label {
+	font-size: larger;
+	font-weight: 700;
+}
+
+.formContact input {
+	height: 30px;
+	margin: 10px 20px;
+	width: 30%;
+}
+
+.formContact textarea {
+	margin: 10px 20px;
+	width: 70%;
+	height: 100px;
+}
+
+.formContact button {
+	width: 10%;
+	text-align: center;
+	align-self: center;
+}
+
+.buttonHome {
+	margin: 10px 5px;
+}
+
+.contact {
+	font-size: 30px;
+	color: black;
 }
 
 .contact-btn {

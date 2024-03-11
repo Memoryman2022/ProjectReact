@@ -86,7 +86,7 @@ export const HomePrincipal = ({ recipeData, recipes, setRecipes }) => {
         At "La Buena Comida" you will find recipes to delight and tantalise your
         tastebuds! We host a cornucopia of dishes, so you can discover the joy
         of cooking no matter your skill level. We also provide you with the
-        opportunity share your own unique recipes with our every growing
+        opportunity share your own unique recipes with our ever growing
         community!
       </p>
     </>

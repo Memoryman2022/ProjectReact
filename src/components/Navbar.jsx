@@ -17,9 +17,15 @@ export default function Navbar({ recipes }) {
     <div className="navbar">
       <img className="logo" src={Logo} alt="image-logo" />
       <ul className="list">
-        <Link to="/">HOME</Link>
-        <Link to="/About">ABOUT</Link>
-        <button onClick={handleRandomRecipe}>RANDOM RECIPE</button>
+        <button className="home-btn">
+          <Link to="/">HOME</Link>
+        </button>
+        <button className="about-btn">
+          <Link to="/About">ABOUT</Link>
+        </button>
+        <button className="random-btn" onClick={handleRandomRecipe}>
+          RANDOM RECIPE
+        </button>
       </ul>
     </div>
   );

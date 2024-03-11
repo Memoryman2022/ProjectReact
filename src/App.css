@@ -5,8 +5,19 @@
   text-align: center;
 }
 
+@font-face {
+  font-family: "Gill Sans";
+  src: url("src/fonts/GillSans.ttc") format("ttc"),
+    url("src/fonts/GillSans.ttc") format("ttc");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 a {
   text-decoration: none;
+  color: #2a4255;
   padding: 0px;
 }
 
@@ -41,6 +52,8 @@ p {
   color: #888;
 }
 
+/*NAVBAR*/
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -50,6 +63,18 @@ p {
   border-radius: 10px;
   height: 100px;
   padding: 10px;
+}
+.random-btn {
+  color: #2a4255;
+  background-color: rgb(246, 237, 207);
+}
+.home-btn {
+  color: #2a4255;
+  background-color: rgb(246, 237, 207);
+}
+.about-btn {
+  color: #2a4255;
+  background-color: rgb(246, 237, 207);
 }
 
 .list {
@@ -105,7 +130,7 @@ p {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: lightseagreen;
+  background-color: rgb(246, 237, 207);
   border-radius: 10px;
   height: 100px;
   padding: 10px;
@@ -175,7 +200,7 @@ p {
 .about-script {
   margin: 40px;
   padding: 10px;
-  color: rgb(216, 199, 111);
+  color: #2a4255;
 }
 
 .main-container {

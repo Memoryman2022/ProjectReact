@@ -43,9 +43,9 @@ p {
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  background-color: lightseagreen;
+  background-color: rgb(234, 202, 100);
   border-radius: 10px;
   height: 100px;
   padding: 10px;
@@ -53,6 +53,7 @@ p {
 
 .list {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   width: 80%;
   color: white;
@@ -118,13 +119,13 @@ p {
 .sidebar {
   background-color: lightgray;
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
   width: 100x;
 }
 
 .containerRoutes {
   width: 85%;
-  background: rgb(53, 60, 83);
+  background: rgb(57, 60, 68);
   border-radius: 10px;
 }
 .submit-recipe-btn {
@@ -172,5 +173,5 @@ p {
 .about-script {
   margin: 40px;
   padding: 10px;
-  color: rgb(234, 166, 158);
+  color: rgb(216, 199, 111);
 }

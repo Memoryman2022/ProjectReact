@@ -239,6 +239,11 @@ p {
   margin: 40px;
   padding: 10px;
   color: #2a4255;
+  max-width: 900px;
+}
+
+.couple {
+  width: 30%;
 }
 
 /*MAIN PAGE*/

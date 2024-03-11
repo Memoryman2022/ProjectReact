@@ -83,16 +83,12 @@ export const HomePrincipal = ({ recipeData, recipes, setRecipes }) => {
         </div>
       </div>
       <p className="textHome">
-        In "La buena Cocina" you will find recipes to delight your palate. We
-        have a wide variety of content, so you can find out how to make a lot of
-        menus so you won't get bored. you can also save your own unique recipe
+        At "La Buena Comida" you will find recipes to delight and tantalise your
+        tastebuds! We host a cornucopia of dishes, so you can discover the joy
+        of cooking no matter your skill level. We also provide you with the
+        opportunity share your own unique recipes with our every growing
+        community!
       </p>
-      <Link to="/">
-        <button>Create Recipe</button>
-      </Link>
-      <Link to="/">
-        <button>All Recipe</button>
-      </Link>
     </>
   );
 };

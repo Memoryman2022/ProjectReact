@@ -168,6 +168,7 @@ p {
   flex-direction: column;
   align-items: start;
   padding: 0;
+  padding-left: 19px;
 }
 
 /*NEW RECIPE FORM*/
@@ -266,8 +267,8 @@ p {
 
 .main-image {
   padding-top: 20px;
-  width: 500px;
-  height: 260px;
+  width: 400px;
+  height: 200px;
 }
 
 .textHome {
@@ -402,4 +403,9 @@ div.inactive {
 .not-found img {
   padding-top: 80px;
   width: 40%;
+}
+/*Random recipe*/
+
+.recipeAlone {
+  margin-top: 250px;
 }

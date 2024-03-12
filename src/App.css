@@ -1,11 +1,8 @@
 #root {
-
-
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 @font-face {
@@ -19,57 +16,47 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 a {
-
-	text-decoration: none;
-	padding: 0px;
-
+  text-decoration: none;
+  padding: 0px;
+  color: #2a4255;
 }
-
 
 .container-images ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 li {
-	list-style: none;
+  list-style: none;
 }
 
 p {
-
   padding: 0px;
   margin: 6px;
   color: black;
-
 }
 
 .logo {
-	height: 5em;
-	margin: 10px 20px;
-	border-radius: 10px;
-
-
+  height: 5em;
+  margin: 10px 20px;
 }
 
-
 .read-the-docs {
-	color: #888;
+  color: #888;
 }
 
 /*NAVBAR*/
 
 .navbar {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	background-color: rgb(225, 218, 204);
-	border-radius: 10px;
-	height: 100px;
-	padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(225, 218, 204);
 
+  height: 100px;
+  padding: 10px;
 }
 .logo {
   width: 160px;
@@ -89,110 +76,99 @@ p {
 }
 
 .list {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	width: 80%;
-	color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  color: white;
 }
 
 .list li {
-	list-style: none;
-	font-size: 25px;
-	text-transform: uppercase;
-	font-weight: 400;
+  list-style: none;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 .list li:hover {
-	font-style: italic;
-	font-weight: 700;
+  font-style: italic;
+  font-weight: 700;
 }
 
 .recipeContainer {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .listContainer {
-	width: 100%;
-	background-color: lightblue;
-	border-radius: 10px;
+  width: 100%;
+  background-color: lightblue;
 }
 
 .listRecipe {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid brown;
+  border: 3px solid rgb(201, 165, 34);
   margin: 10px auto;
   padding: 10px;
-  border-radius: 10px;
   width: 50%;
   background-color: rgb(255, 255, 255);
-
+  border-radius: 10px;
 }
 
 .listRecipe img {
-	height: 100px;
-	border-radius: 10px;
+  height: 100px;
 }
 
 .footerContainer {
-
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	background-color: rgb(225, 218, 204);
-	border-radius: 10px;
-	height: 100px;
-	padding: 10px;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(225, 218, 204);
+  height: 100px;
+  padding: 10px;
 }
 
 .containerPrincipal {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-}
-
-/* SIDEBAR*/
-
-.sidebar {
-
-  color: #2a4255;
-  background-color: lightgray;
-  padding: 10px;
-  width: 250px;
-
-}
-
-.containerRoutes {
-	width: 85%;
-	background: rgb(246, 237, 207);
-	border-radius: 10px;
-	color: #2a4255;
-
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .main-image {
   width: 500px;
   height: 260px;
+}
+/* SIDEBAR*/
 
+.sidebar {
+  color: #2a4255;
+  background-color: lightgray;
+  padding: 10px;
+  width: 250px;
+  height: 750px;
+}
+
+.containerRoutes {
+  width: 85%;
+  background: rgb(246, 237, 207);
+  color: #2a4255;
 }
 
 .submit-recipe-btn {
-	display: inline-block;
-	background-color: #2a4255;
-	color: white;
-	padding: 10px 20px;
-	text-align: center;
-	text-decoration: none;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-	border: none;
-	border-radius: 4px;
+  display: inline-block;
+  background-color: #2a4255;
+  color: white;
+  padding: 10px 20px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 
 .sidebar-ul {
@@ -201,6 +177,7 @@ p {
   align-items: start;
   padding: 0;
   padding-left: 19px;
+  width: 100%;
 }
 
 /*NEW RECIPE FORM*/
@@ -213,7 +190,6 @@ p {
 }
 
 .submit-new-recipe-form {
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -231,14 +207,13 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 .submit-new-recipe-form input {
-	padding: 10px;
-	margin: 20px 0;
-	width: 50%;
-	border: 1px solid #ccc;
-	border-radius: 4px;
+  padding: 10px;
+  margin: 20px 0;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .text-form {
@@ -287,7 +262,6 @@ p {
 /* ABOUT PAGE*/
 
 .about-script {
-
   margin: 40px;
   padding: 10px;
   color: #2a4255;
@@ -296,7 +270,6 @@ p {
 
 .couple {
   width: 30%;
-
 }
 
 /*MAIN PAGE*/
@@ -312,56 +285,53 @@ p {
   margin: 30px auto;
 }
 .main-container {
-	width: 500px;
-	height: 300px;
-	margin: 0 auto;
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
 }
 
 .slider-container {
-	position: relative;
-	height: 100%;
+  position: relative;
+  height: 100%;
 }
 
 .dots-container {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .dot-container-item {
-	margin: 8px 3px;
-	cursor: pointer;
-	font-size: 20px;
-	text-align: center;
+  margin: 8px 3px;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
 }
 
 .leftArrow {
-
-	position: absolute;
-	top: 50%;
-	transform: translate(0, -50%);
-	left: 20px;
-	font-size: 80px;
-	font-weight: 900;
-	color: black;
-	z-index: 1;
-	cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 20px;
+  font-size: 80px;
+  font-weight: 900;
+  color: #2a4255;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .rightArrow {
-	position: absolute;
-	top: 50%;
-	transform: translate(0, -50%);
-	right: 20px;
-	font-size: 80px;
-	font-weight: 900;
-	color: black;
-	z-index: 1;
-	cursor: pointer;
-
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 20px;
+  font-size: 80px;
+  font-weight: 900;
+  color: #2a4255;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .container-images {
-
   width: 100%;
   height: 100%;
   border-radius: 20px;
@@ -379,23 +349,18 @@ p {
   height: 230px;
   margin: 10px;
 }
-.container-images ul li h3 {
 
-}
 div.active {
-
-  background: rgb(195, 134, 13);
+  background: rgb(248, 236, 213);
   width: 15px;
   height: 15px;
   border-radius: 50%;
-
 }
 div.inactive {
-	background: lightseagreen;
-	width: 15px;
-	height: 15px;
-	border-radius: 50%;
-
+  background: #2a4255;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
 }
 
 /*FOOTER*/
@@ -407,13 +372,13 @@ div.inactive {
   padding-right: 40px;
 }
 .logo-footer {
-	width: 40px;
-	height: 40px;
-	margin: 15px;
+  width: 40px;
+  height: 40px;
+  margin: 15px;
 }
 
 .footerInf {
-
+  width: 75%;
   padding: 0 10px;
   display: flex;
   justify-content: space-around;
@@ -422,57 +387,65 @@ div.inactive {
 .footerInf p {
   margin: 0;
   font-weight: 500;
-
 }
 
 .footerInf p span {
-	font-weight: 400;
+  font-weight: 400;
 }
 
 .footerInf h4 {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-	margin: 0;
+@media (min-width: 768px) {
+  .logo-footer {
+    width: 20px;
+    height: 20px;
+    margin: 5px 10px 0px 20px;
+  }
 }
 
 .formContact {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	height: 400px;
-	margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 400px;
+  margin: 20px;
 }
 
 .formContact label {
-	font-size: larger;
-	font-weight: 700;
+  font-size: larger;
+  font-weight: 700;
 }
 
 .formContact input {
-	height: 30px;
-	margin: 10px 20px;
-	width: 30%;
+  height: 30px;
+  margin: 10px 20px;
+  width: 30%;
 }
 
 .formContact textarea {
-	margin: 10px 20px;
-	width: 70%;
-	height: 100px;
+  margin: 10px 20px;
+  width: 70%;
+  height: 100px;
 }
 
 .formContact button {
-	width: 10%;
-	text-align: center;
-	align-self: center;
+  width: 10%;
+  text-align: center;
+  align-self: center;
 }
 
 .buttonHome {
-	margin: 10px 5px;
+  margin: 10px 5px;
 }
 
 .contact {
-	font-size: 30px;
-	color: black;
-
+  font-size: 30px;
+  color: black;
 }
 
 .contact-btn {
@@ -494,4 +467,19 @@ div.inactive {
 
 .recipeAlone {
   margin-top: 250px;
+}
+/*FORM CONTACT*/
+
+.formContact {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.anotherClass {
+  margin: 50px;
+}
+
+.new-recipe-div textarea {
+  width: 53%;
 }

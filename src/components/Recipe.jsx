@@ -1,11 +1,12 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 
 export default function Recipes({ recipes, setRecipes, recipeData }) {
   const { recipeId } = useParams();
   const recipeInfo = recipeData.find((recipe) => recipe.id === recipeId);
-
+  const nav = useNavigate();
   const deleteById = (id) => {
-    setRecipeArray((food) => {
+    setRecipes((food) => {
+      nav("/");
       return food.filter((recipe) => recipe.id !== id);
     });
   };

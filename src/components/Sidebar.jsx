@@ -4,10 +4,7 @@ export default function Sidebar({ recipes, setRecipes }) {
   return (
     <div className="sidebar">
       <h2>Recipes</h2>
-      <Link to="/NewRecipeForm" className="submit-recipe-btn">
-        Submit New Recipe
-      </Link>
-      <ul>
+      <ul className="sidebar-ul">
         {recipes.map((recipe) => {
           return (
             <li key={recipe.id}>
@@ -18,6 +15,9 @@ export default function Sidebar({ recipes, setRecipes }) {
           );
         })}
       </ul>
+      <Link to="/NewRecipeForm" className="submit-recipe-btn">
+        Submit New Recipe
+      </Link>
     </div>
   );
 }

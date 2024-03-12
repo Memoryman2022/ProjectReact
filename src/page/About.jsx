@@ -13,7 +13,9 @@ function About() {
         of the earth's generosity, and an art that colors the canvas of our
         daily lives. At La Buena Comida, our inspiration blooms from this very
         essence of food - its power to unite, to comfort, and to bring joy.
-        <br /> <br />
+        <br />
+        <img className="couple" src="../../images/couple.png" />
+        <br />
         Founded by a team of culinary enthusiasts, La Buena Comida sprouted from
         a simple yet profound passion for food. Our journey began in kitchens
         far and wide, where we discovered the soulful connection between the
@@ -36,6 +38,7 @@ function About() {
         inspiration, our platform is designed to cater to every palate, skill
         level, and culinary curiosity.
         <br />
+        <img className="couple" src="../../images/cooking.png" />
         <br />
         Our commitment is to bring the passion for food to as many people as
         possible. We believe in making the kitchen a place of exploration and

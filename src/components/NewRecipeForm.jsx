@@ -91,7 +91,7 @@ const NewRecipeForm = ({ addRecipe, recipes, setRecipes, recipeData }) => {
             SUBMIT RECIPE
           </button>
           <Link to="/">
-            <button className="submit-recipe-btn-form"> RETURN</button>
+            <button className="submit-recipe-btn-form"> RETURN HOME</button>
           </Link>
         </div>
       </form>

@@ -1,6 +1,5 @@
 #root {
   width: 100%;
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -20,11 +19,10 @@ a {
   padding: 0px;
 }
 
-ul {
-  padding: 0px;
+.container-images ul {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 li {
@@ -33,7 +31,7 @@ li {
 
 p {
   padding: 0px;
-  margin: 5px;
+  margin: 6px;
   color: black;
 }
 
@@ -42,10 +40,6 @@ p {
   height: 5em;
   margin: 10px 20px;
   border-radius: 10px;
-}
-
-.card {
-  padding: 2em;
 }
 
 .read-the-docs {
@@ -152,8 +146,7 @@ p {
   color: #2a4255;
   background-color: lightgray;
   padding: 10px;
-  padding-left: 15px;
-  width: 100x;
+  width: 250px;
 }
 
 .submit-recipe-btn {
@@ -168,6 +161,13 @@ p {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+}
+
+.sidebar-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0;
 }
 
 /*NEW RECIPE FORM*/
@@ -242,8 +242,6 @@ p {
   width: 200px;
 }
 
-/* ABOUT PAGE*/
-
 .containerRoutes {
   width: 100%;
   background: rgb(231, 213, 177);
@@ -251,10 +249,8 @@ p {
   color: #2a4255;
 }
 
-.main-image {
-  width: 500px;
-  height: 260px;
-}
+/* ABOUT PAGE*/
+
 .about-script {
   margin: 40px;
   padding: 10px;
@@ -268,6 +264,16 @@ p {
 
 /*MAIN PAGE*/
 
+.main-image {
+  padding-top: 20px;
+  width: 500px;
+  height: 260px;
+}
+
+.textHome {
+  width: 60%;
+  margin: 30px auto;
+}
 .main-container {
   width: 500px;
   height: 300px;
@@ -319,20 +325,22 @@ p {
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  border: 1px solid #eee;
+  border: 3px solid #eee;
   overflow: hidden;
+  background-color: #ffffff;
+}
+.container-images ul {
+  padding-left: 0%;
+  padding-top: 15px;
 }
 
 .container-images img {
   width: 100%;
   height: 230px;
+  margin: 10px;
 }
-
-.textHome {
-  width: 60%;
-  margin: 50px auto;
+.container-images ul li h3 {
 }
-
 div.active {
   background: rgb(195, 134, 13);
   width: 15px;

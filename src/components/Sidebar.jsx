@@ -4,7 +4,7 @@ export default function Sidebar({ recipes, setRecipes }) {
   return (
     <div className="sidebar">
       <h2>Recipes</h2>
-      <ul>
+      <ul className="sidebar-ul">
         {recipes.map((recipe) => {
           return (
             <li key={recipe.id}>

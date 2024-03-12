@@ -38,17 +38,18 @@ export default function Footer() {
         </a>
       </div>
       <div className="footerInf">
-        <h4>Developed by</h4>
+        <h4>Developed by:</h4>
 
         <p>
-          Robert Cannon <span>https://github.com/Memoryman2022</span>
+          Robert Cannon <br /> <span>https://github.com/Memoryman2022</span>
         </p>
 
         <p>
-          Luis Felipe <span>https://github.com/unidrelyn</span>
+          Luis Felipe <br />
+          <span>https://github.com/unidrelyn</span>
         </p>
       </div>
-      <button className="contact-btn">contact</button>
+      <button className="contact-btn">Contact</button>
     </div>
   );
 }

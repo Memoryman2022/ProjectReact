@@ -66,6 +66,7 @@ p {
 }
 .logo {
   width: 160px;
+  height: 100px;
 }
 .random-btn {
   color: #2a4255;
@@ -155,18 +156,6 @@ p {
   width: 100x;
 }
 
-.containerRoutes {
-  width: 85%;
-  background: rgb(231, 213, 177);
-
-  color: #2a4255;
-}
-
-.main-image {
-  width: 500px;
-  height: 260px;
-}
-
 .submit-recipe-btn {
   display: inline-block;
   background-color: #2a4255;
@@ -182,14 +171,24 @@ p {
 }
 
 /*NEW RECIPE FORM*/
+.form-header {
+  display: flex;
+  flex-direction: row;
+  padding-right: 70px;
+  align-items: center;
+  justify-content: space-around;
+}
 
 .submit-new-recipe-form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  height: 60%;
+  max-width: 1000px;
 }
 .submit-new-recipe-form label {
   padding: 10px;
+  height: 50px;
   margin: 10px 0;
   width: 80%;
   border: 5px solid #457089;
@@ -216,7 +215,8 @@ p {
 
 .new-recipe-div {
   width: 100%;
-  padding-top: 40px;
+  height: 100%;
+  padding-top: 20px;
   padding-left: 50px;
 }
 
@@ -234,8 +234,27 @@ p {
   border-radius: 4px;
 }
 
+.form-buttons-div {
+  padding-top: 20px;
+}
+
+.food-img {
+  width: 200px;
+}
+
 /* ABOUT PAGE*/
 
+.containerRoutes {
+  width: 100%;
+  background: rgb(231, 213, 177);
+
+  color: #2a4255;
+}
+
+.main-image {
+  width: 500px;
+  height: 260px;
+}
 .about-script {
   margin: 40px;
   padding: 10px;
@@ -315,7 +334,7 @@ p {
 }
 
 div.active {
-  background: black;
+  background: rgb(195, 134, 13);
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -330,7 +349,10 @@ div.inactive {
 /*FOOTER*/
 .footerContainer {
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   color: #2a4255;
+  padding-right: 40px;
 }
 .logo-footer {
   width: 40px;
@@ -340,11 +362,13 @@ div.inactive {
 
 .footerInf {
   padding: 0 10px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footerInf p {
   margin: 0;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .footerInf p span {
@@ -353,6 +377,7 @@ div.inactive {
 
 .footerInf h4 {
   margin: 0;
+  font-weight: 200;
 }
 
 .contact-btn {

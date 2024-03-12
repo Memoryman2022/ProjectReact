@@ -32,7 +32,10 @@ const NewRecipeForm = ({ addRecipe, recipes, setRecipes, recipeData }) => {
 
   return (
     <div className="new-recipe-div">
-      <h2 className="text-form">Add your own recipe</h2>
+      <div className="form-header">
+        <h2 className="text-form">Share your own recipe below:</h2>
+        <img className="food-img" src="../../images/food.png" />
+      </div>
 
       <form onSubmit={handleSubmitNewRecipe} className="submit-new-recipe-form">
         <label>
@@ -83,12 +86,14 @@ const NewRecipeForm = ({ addRecipe, recipes, setRecipes, recipeData }) => {
             }}
           />
         </label>
-        <button className="submit-recipe-btn-form" type="submit">
-          SUBMIT RECIPE
-        </button>
-        <Link to="/">
-          <button className="submit-recipe-btn-form">Return</button>
-        </Link>
+        <div className="form-buttons-div">
+          <button className="submit-recipe-btn-form" type="submit">
+            SUBMIT RECIPE
+          </button>
+          <Link to="/">
+            <button className="submit-recipe-btn-form"> RETURN</button>
+          </Link>
+        </div>
       </form>
     </div>
   );

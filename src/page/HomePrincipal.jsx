@@ -43,6 +43,13 @@ export const HomePrincipal = ({ recipeData, recipes, setRecipes }) => {
   return (
     <>
       <img className="main-image" src="../../images/main.png" />
+      <p className="textHome">
+        At "La Buena Comida" you will find recipes to delight and tantalise your
+        tastebuds! We host a cornucopia of dishes, so you can discover the joy
+        of cooking no matter your skill level. We also provide you with the
+        opportunity share your own unique recipes with our ever growing
+        community!
+      </p>
       <div className="main-container">
         <div className="slider-container">
           <div className="leftArrow" onClick={() => scrollToImage("prev")}>
@@ -82,13 +89,6 @@ export const HomePrincipal = ({ recipeData, recipes, setRecipes }) => {
           </div>
         </div>
       </div>
-      <p className="textHome">
-        At "La Buena Comida" you will find recipes to delight and tantalise your
-        tastebuds! We host a cornucopia of dishes, so you can discover the joy
-        of cooking no matter your skill level. We also provide you with the
-        opportunity share your own unique recipes with our ever growing
-        community!
-      </p>
     </>
   );
 };

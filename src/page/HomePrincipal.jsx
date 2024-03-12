@@ -40,6 +40,7 @@ export const HomePrincipal = ({ recipeData, recipes, setRecipes }) => {
 		currentIndex >= 17 ? setCurrentIndex(0) : scrollToImage("next");
 	}, 1000);*/
 
+
   return (
     <>
       <img className="main-image" src="../../images/main.png" />
